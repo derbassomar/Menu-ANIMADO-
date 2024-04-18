@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+      <title>menu animado</title>
+
+      <link rel="stylesheet" href="menu aninado.css">
+      <script src="https://kit.fontawesome.com/c8e42a35a5.js" crossorigin="anonymous"></script>
+      
+</head>
+
+<body>
+  <ul class="menu">
+    <div class="menu-icones"><i class="fa-solid fa-plus"></i></div>
+    <li style="--i: 0; --clr: var(--main-red);">
+      <a href="#"><i class="fa-solid fa-house"></i></a>
+    </li>
+    <li style="--i: 1; --clr: var(--main-orange);">
+      <a href="#"><i class="fa-solid fa-image"></i></a>
+    </li>
+    <li style="--i: 2; --clr: var(--main-blue);">
+      <a href="#"><i class="fa-solid fa-gamepad"></i></a>
+    </li>
+    <li style="--i: 3; --clr: var(--main-green);">
+      <a href="#"><i class="fa-solid fa-video"></i></a>
+    </li>
+    <li style="--i: 4; --clr: var(--main-purple);">
+      <a href="#"><i class="fa-solid fa-address-book"></i></a>
+    </li>
+    <li style="--i: 5; --clr: var(--main-pink);">
+      <a href="#"><i class="fa-solid fa-gear"></i></a>
+    </li>
+    <li style="--i: 6; --clr: var(--main-brown);">
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    </li>
+    <li style="--i: 7; --clr: #771c51;">
+      <a href="#"><i class="fa-solid fa-camera"></i></a>
+  </ul>
+
+  <script src="menu.js">
+    let menuicones = document.querySelector('.menu-icones');
+    let menu = document.querySelector('.menu');
+
+    menuicones.onclick = function() {
+      menu.classList.toggle('active')
+    }
+  </script>
+  
+</body>
+
+</html>
